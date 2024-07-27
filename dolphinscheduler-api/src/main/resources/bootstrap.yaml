@@ -26,3 +26,12 @@ spring:
       config:
         sources:
           - name: ${spring.application.name}
+
+jasypt:
+  encryptor:
+    bootstrap: true
+    property:
+      prefix: "ENC("
+      suffix: ")"
+    private-key-format: PEM
+    private-key-location: classpath:encrypt/private_key.pem

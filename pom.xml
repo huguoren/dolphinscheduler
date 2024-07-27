@@ -88,6 +88,7 @@
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
         <owasp-dependency-check-maven.version>7.1.2</owasp-dependency-check-maven.version>
         <lombok.version>1.18.20</lombok.version>
+        <jasypt-spring-boot-starter.version>3.0.5</jasypt-spring-boot-starter.version>
         <docker.hub>apache</docker.hub>
         <docker.repo>${project.name}</docker.repo>
         <docker.tag>${project.version}</docker.tag>
@@ -369,6 +370,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>${jasypt-spring-boot-starter.version}</version>
         </dependency>
     </dependencies>
 

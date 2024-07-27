@@ -17,7 +17,7 @@
 
 spring:
   profiles:
-    active: postgresql
+    active: mysql
   jackson:
     time-zone: UTC
     date-format: "yyyy-MM-dd HH:mm:ss"
@@ -92,9 +92,9 @@ registry:
       base-sleep-time: 60ms
       max-sleep: 300ms
       max-retries: 5
-    session-timeout: 30s
-    connection-timeout: 9s
-    block-until-connected: 600ms
+    session-timeout: 120s
+    connection-timeout: 90s
+    block-until-connected: 60000ms
     digest: ~
 
 metrics:
@@ -111,4 +111,4 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/dolphinscheduler
     username: root
-    password: root
+    password: "ENC(V5Nsxtpx19KTZOZGdU9LVeqAnVDiFGK583dtCUCFRGu4Q2FY1Li2srf3m815aQNi8LP2QHVET9IkYmEpDSaLBBrt3+qxN7QDzUAsIlv+OXFZ66rh464sXwPSLT1PECc9MvykI5sdNKuQlGAKUghuiS6RLo7um2/sohsCaUgu6X8KxbRc6SrE4yBnVVbnlYj8dRuBXdP5JQIf5jDnhEXfyzDW3qH3PJ+VhFQ5FV6thUG229S+KZJLKcBZ7iJccwh78svKJy2CA53p0ax/X78FBROy5HxXKzYJCO0j33vnfThRHekavL94pxvAD+CYp4m8qAmyIFh64Jj6/qquh3HZcQ==)"
